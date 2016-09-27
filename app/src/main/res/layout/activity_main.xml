@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color11"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:baselineAligned="true"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical"
+            android:paddingStart="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toStartOf="@+id/refresh"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/operations_statistics"
+            android:textColor="@color/color1"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/refresh"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:baselineAligned="true"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical"
+            android:paddingEnd="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/refresh" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <com.liuwan.customview.widget.PieChartView
+            android:id="@+id/customPieChart"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="@string/workticket"
+            android:textColor="@color/color6"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txWorkTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/workticket_value"
+                android:textColor="@color/color6"
+                android:textSize="13sp" />
+
+            <ProgressBar
+                android:id="@+id/pbWorkTicket"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="255dp"
+                android:layout_height="17dp"
+                android:layout_alignParentEnd="true"
+                android:max="17"
+                android:progress="8"
+                android:progressDrawable="@drawable/progressbar_workticket" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="@string/operationticket"
+            android:textColor="@color/color6"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txOperationTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/operationticket_value"
+                android:textColor="@color/color6"
+                android:textSize="13sp" />
+
+            <ProgressBar
+                android:id="@+id/pbOperationTicket"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="17dp"
+                android:layout_alignParentEnd="true"
+                android:max="10"
+                android:progress="6"
+                android:progressDrawable="@drawable/progressbar_operationticket" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="@string/defectticket"
+            android:textColor="@color/color6"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txDefectTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/defectticket_value"
+                android:textColor="@color/color6"
+                android:textSize="13sp" />
+
+            <ProgressBar
+                android:id="@+id/pbDefect"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="60dp"
+                android:layout_height="17dp"
+                android:layout_alignParentEnd="true"
+                android:max="4"
+                android:progress="2"
+                android:progressDrawable="@drawable/progressbar_defect" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

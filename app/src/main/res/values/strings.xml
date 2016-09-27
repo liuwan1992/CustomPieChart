@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PieChart</string>
+    <string name="operations_statistics">运维统计</string>
+    <string name="workticket">工作票</string>
+    <string name="workticket_value">8/17</string>
+    <string name="operationticket">操作票</string>
+    <string name="operationticket_value">6/10</string>
+    <string name="defectticket">缺陷</string>
+    <string name="defectticket_value">2/4</string>
+</resources>
